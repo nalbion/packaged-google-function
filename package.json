@@ -1,0 +1,13 @@
+{
+  "name": "packaged-google-function",
+  "version": "1.0.0",
+  "description": "Packaged Google Cloud Function deployment",
+  "scripts": {
+    "package": "npx ./fuse.js"
+  },
+  "devDependencies": {
+    "fuse-box": "2.3.3"
+  },
+  "author": "Nicholas Albion",
+  "license": "MIT"
+}
