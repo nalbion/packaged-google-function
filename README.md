@@ -1,3 +1,5 @@
+*ABANDONED WIP*
+
 This is a simple demonstration of how a Typescript web service
 can be packaged into a single .js file and deployed to [Google Cloud Functions](https://console.cloud.google.com/functions).
 
