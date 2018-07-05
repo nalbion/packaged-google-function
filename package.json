@@ -6,8 +6,12 @@
     "package": "npx ./fuse.js"
   },
   "devDependencies": {
-    "fuse-box": "2.3.3"
+    "fuse-box": "2.3.3",
+    "typescript": "^2.9.2"
   },
   "author": "Nicholas Albion",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/datastore": "^1.4.1"
+  }
 }

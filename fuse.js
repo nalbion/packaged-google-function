@@ -16,15 +16,18 @@ const fuse = FuseBox.init({
     // overrideExtensions: ['.js', '.json'],
     // useTypescriptCompiler: true,
     // allowSyntheticDefaultImports: true,
+    filterFile: file => {
+        return !['@google-cloud/datastore'].includes(file.collection.name);
+    },
     plugins : [
         // Banner('require(\'source-map-support\').install();'),
 //Doesn't like versioning of @google-cloud/common
-        QuantumPlugin({
-            target: 'server',
-            bakeApiIntoBundle: functionName,
-            containedAPI: true
-            // treeshake: true
-        }),
+//         QuantumPlugin({
+//             target: 'server',
+//             bakeApiIntoBundle: functionName,
+//             containedAPI: true
+//             // treeshake: true
+//         }),
         JSONPlugin()
     ]
 });
